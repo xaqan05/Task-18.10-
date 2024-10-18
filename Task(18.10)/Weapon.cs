@@ -86,7 +86,7 @@ namespace Task_18._10_
 
         public void Reload()
         {
-            if(BulletNum <= Charger)
+            if(BulletNum < Charger)
             {
                 Console.WriteLine("Reload etmek ucun yeterli gulleniz yoxdur");
             }
