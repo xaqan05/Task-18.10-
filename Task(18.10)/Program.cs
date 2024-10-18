@@ -15,7 +15,7 @@ namespace Task_18._10_
             string input;
             string input2;
             string name;
-            int charger=40;
+            int charger = 40;
             int bulletNum;
             bool fireMod = false;
             int addBullet;
@@ -54,14 +54,14 @@ namespace Task_18._10_
 
                             Console.WriteLine("Zehmet olmasa daraqdaki tutumun daxil edin (Daraq tutumu 0 ve 40 arasi olmalidir.) :");
                             condition1 = int.TryParse(Console.ReadLine(), out charger);
-                            if(charger > 40)
+                            if (charger > 40)
                             {
                                 condition1 = false;
                                 Console.WriteLine("Duzgun qiymet daxil etmediniz.");
                                 Console.WriteLine(" ");
-                                    
+
                             }
-                            
+
                         }
                         while (!condition1);
 
@@ -81,7 +81,6 @@ namespace Task_18._10_
                             Console.WriteLine("Zehmet olmasa silah modunu secin:");
                             Console.WriteLine("Avomatik mod ucun 1, tekli mod ucun 0 daxil edin:");
                             input2 = Console.ReadLine();
-
                             switch (input2)
                             {
                                 case "1":
@@ -90,8 +89,12 @@ namespace Task_18._10_
                                 case "0":
                                     fireMod = false;
                                     break;
+                                default:
+                                    Console.WriteLine("Zehmet olmasa duzgun secim edin.");
+                                    break;
                             }
-                        } while (!condition1);
+
+                        } while (input2 != "1" && input2 != "0");
 
                         weapon = new Weapon(name, charger, bulletNum, fireMod);
                         Console.WriteLine("Silah ugurlu bir sekilde yaradildi");
@@ -102,11 +105,11 @@ namespace Task_18._10_
 
                         Console.Clear();
                         Console.WriteLine(" ");
-                        if(weapon != null)
+                        if (weapon != null)
                         {
                             if (fireMod)
                             {
-                            Console.WriteLine($"Silahin adi: {weapon.weaponName}, Daraq tutumu: {weapon.Charger}, Daraqda olan gulle sayi: {weapon.chargeBulletNum}, Gulle sayi: {weapon.BulletNum} , Silah modu: Avtomatik");
+                                Console.WriteLine($"Silahin adi: {weapon.weaponName}, Daraq tutumu: {weapon.Charger}, Daraqda olan gulle sayi: {weapon.chargeBulletNum}, Gulle sayi: {weapon.BulletNum} , Silah modu: Avtomatik");
                             }
                             else
                             {
@@ -165,19 +168,25 @@ namespace Task_18._10_
                             Console.WriteLine("Zehmet olmasa ilk once silah yaradin.");
                         }
                         break;
-                        case "6":
-                            bool condition2;
+                    case "6":
+                        bool condition2;
                         do
                         {
-                            Console.WriteLine("Zehmet olmasa elave etmek istediyiniz gulle sayini daxil edin:");
-                            condition2 = int.TryParse(Console.ReadLine(), out addBullet);
 
-                            if(weapon != null)
+
+                            if (weapon != null)
                             {
-                                weapon.addBullet(addBullet);
+                                Console.WriteLine("Zehmet olmasa elave etmek istediyiniz gulle sayini daxil edin:");
+                                condition2 = int.TryParse(Console.ReadLine(), out addBullet);
+                                if (addBullet > 0)
+                                {
+                                    weapon.addBullet(addBullet);
+                                    Console.WriteLine($"{addBullet} gulle elave olundu.");
+                                }
                             }
                             else
                             {
+                                condition2 = true;
                                 Console.WriteLine("Zehmet olmasa ilk once silah yaradin");
                             }
 

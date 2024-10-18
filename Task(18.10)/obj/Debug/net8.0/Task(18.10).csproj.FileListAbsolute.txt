@@ -12,3 +12,18 @@ C:\Users\ll Novbe\Desktop\Task\Task(18.10)\Task(18.10)\obj\Debug\net8.0\refint\T
 C:\Users\ll Novbe\Desktop\Task\Task(18.10)\Task(18.10)\obj\Debug\net8.0\Task(18.10).pdb
 C:\Users\ll Novbe\Desktop\Task\Task(18.10)\Task(18.10)\obj\Debug\net8.0\Task(18.10).genruntimeconfig.cache
 C:\Users\ll Novbe\Desktop\Task\Task(18.10)\Task(18.10)\obj\Debug\net8.0\ref\Task(18.10).dll
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\bin\Debug\net8.0\Task(18.10).exe
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\bin\Debug\net8.0\Task(18.10).deps.json
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\bin\Debug\net8.0\Task(18.10).runtimeconfig.json
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\bin\Debug\net8.0\Task(18.10).dll
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\bin\Debug\net8.0\Task(18.10).pdb
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).AssemblyInfoInputs.cache
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).AssemblyInfo.cs
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).csproj.CoreCompileInputs.cache
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).sourcelink.json
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).dll
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\refint\Task(18.10).dll
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).pdb
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\Task(18.10).genruntimeconfig.cache
+C:\Users\Xaqan\Desktop\Programming\C#\Task-18.10-\Task(18.10)\obj\Debug\net8.0\ref\Task(18.10).dll

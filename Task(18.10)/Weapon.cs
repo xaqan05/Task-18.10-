@@ -42,7 +42,7 @@ namespace Task_18._10_
             }
             set
             {
-                if (value > 0)
+                if (value >= 0)
                 {
                     _bulletNum = value;
                 }
@@ -86,25 +86,37 @@ namespace Task_18._10_
 
         public void Reload()
         {
-            if(BulletNum < Charger)
+            int missingBullets = Charger - chargeBulletNum;
+
+            if (BulletNum == 0)
             {
-                Console.WriteLine("Reload etmek ucun yeterli gulleniz yoxdur");
+                Console.WriteLine("Reload etmek ucun yeterli gulle yoxdur.");
             }
-            if (BulletNum >= Charger)
+            else if (BulletNum <= missingBullets)
             {
-                chargeBulletNum +=Charger;
-                int required = BulletNum - Charger;
-                BulletNum = required;
-                Console.WriteLine("Silah reload olundu.");
+                chargeBulletNum += BulletNum;  
+                Console.WriteLine($"Silah qismen reload oldu, daraqdaki gulle sayı: {chargeBulletNum}");
+                BulletNum = 0;  
             }
-            Console.WriteLine(" ");
+            else if(chargeBulletNum == Charger)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine("Daraq doludur.");
+            }
+            else
+            {
+                chargeBulletNum = Charger;  
+                BulletNum -= missingBullets;  
+                Console.WriteLine($"Silah tam reload oldu.");
+            }
+
+            Console.WriteLine($"Elimizde qalan gulle: {BulletNum}");
 
         }
 
         public void addBullet(int bullet)
         {
             BulletNum += bullet;
-            Console.WriteLine($"{bullet} gulle elave olundu.");
         }
         public void ChangeFireMode()
         {
